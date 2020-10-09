@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a{
+  text-decoration: none;
+  color: black;
+  font-size: 0.1rem;
+}
+html,
+body {
+  width: 100%;
+   background: #b8f5ff;
+
+}
+.top{
+  height: 2.1rem;
+  width: 100%;
+  background-image: url("../img/bg1.png");
+  background-size: 100% 100%;
+}
+.top ul{
+  width: 3.3rem;
+  height: 0.4rem;
+  background: blue;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* padding: 0.03rem; */
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 0.15rem;
+  position: absolute;
+  top: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+.top ul li{
+  list-style: none;
+  font-size: 0.12rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.15rem;
+  padding: 0.05rem;
+}
+.top ul  .active {
+  transition: 0.3s all;
+  background: #ff64b8;
+  color: #fff;
+}
+.top ul .active a{
+  color: #fff;
+}
+
+.middle{
+  width: 100%;
+  min-height:2rem;
+
+padding-bottom: 1rem;
+padding: 0.3rem;
+padding-top: 0.1rem;
+padding-top: 0.1rem;
+
+box-sizing: border-box;
+  /* height: 1rem; */
+  background: #b8f5ff;
+
+}
+.content{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0.1rem;
+}
+.content .download {
+  width: 0.73rem;
+}
+.content .top_in{ 
+   display: flex;
+}
+.content .top_in .right_in {
+  width: 0.2rem;
+  height: 0.77rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.content .top_in .right_in a{
+  margin-left: 0.02rem;
+}
+.content .top_in .left {
+  width: 0.54rem;
+  height: 0.77rem;
+  display: flex;
+  position: relative;
+}
+.content .top_in .left .top_img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.content .top_in .left .bot_img {
+  position: absolute;
+  bottom: 0;
+}
+.content .top_img{
+  width: 0.36rem;
+  height: 0.36rem;
+}
+
+.content .bot_img{
+  height: 0.7rem;
+}
+.content .right_in img{
+  width: 0.17rem;
+  height: 0.17rem;
+}
+.content .bottom_in {
+
+  font-size: 0;
+}
+.bottom_in p {
+  width: 1rem;
+  font-size: 0.08rem;
+  font-weight: bold;
+  transform: scale(0.7) translateX(-10%);
+  /* transform: ; */
+  word-break: break-all;
+}
+
+.footer{
+  height: 1rem;
+  width: 100%;
+    background-image: url("../img/bg2.png");
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 0;
+}

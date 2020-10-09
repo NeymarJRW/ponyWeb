@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pony Family Games</title>
+  <link rel="Shortcut Icon" href="fav.ico" type="image/x-icon" />
+  <!-- <link rel="stylesheet" href="style2.css"> -->
+</head>
+
+<body>
+  <div class="body">
+    <div class="top">
+      <img src="./img/bg1.png" alt="">
+      <div class="nav">
+        <!-- <ul>
+          <li class="active"> <a href="./index.html">Home</a> </li>
+          <li><a href="./index.html">Games</a></li>
+          <li><a href="./index.html">Support</a></li>
+          <li><a href="./privacy.html" class="yinsi">Privacy Policy</a></li>
+        </ul> -->
+
+      </div>
+    </div>
+    <div class="center">
+      <!-- Pony Hair Salon:Virtual Pony -->
+      <div class="download">
+        <div class="top">
+          <div class="left">
+            <img class="top_img" src="./img/icon3.png" alt="">
+            <img class="bot_img" src="./img/orange.png" alt="">
+          </div>
+          <div class="right">
+            <a href="https://apps.apple.com/app/id1465680087"><img src="./img/ios.png" alt=""></a>
+            <a href="https://play.google.com/store/apps/details?id=air.com.piggames.PonyHairSalonGame"><img
+                src="./img/and.png" alt=""></a>
+            <img src="./img/h5.png" alt="">
+          </div>
+        </div>
+        <div class="bottom">
+          <p>
+            Pony Hair Salon:<br>
+            Virtual Pony
+          </p>
+        </div>
+      </div>
+
+      <!-- Pony Fun Games for Kids -->
+      <div class="download">
+        <div class="top">
+          <div class="left">
+            <img class="top_img" src="./img/icon2.png" alt="">
+            <img class="bot_img" src="./img/blue.png" alt="">
+          </div>
+          <div class="right">
+            <a href="https://apps.apple.com/app/id1475444974"><img src="./img/ios.png" alt=""></a>
+            <img src="./img/and.png" alt="">
+            <img src="./img/h5.png" alt="">
+          </div>
+        </div>
+        <div class="bottom">
+          <p>
+            Pony Fun Games <br>
+            for Kids
+          </p>
+        </div>
+      </div>
+      <div class="download">
+        <div class="top">
+          <div class="left">
+            <img class="top_img" src="./img/icon4.png" alt="">
+            <img class="bot_img" src="./img/blue.png" alt="">
+          </div>
+          <div class="right">
+            <img src="./img/ios.png" alt="">
+            <a href="https://play.google.com/store/apps/details?id=air.com.ponygames.PonyCakeCook"><img
+                src="./img/and.png" alt=""></a>
+            <img src="./img/h5.png" alt="">
+          </div>
+        </div>
+        <div class="bottom">
+          <p>
+            Pony Fun Games<br>
+            for Kids
+          </p>
+        </div>
+      </div>
+
+      <!-- Pony Makeup Spa Salon -->
+      <div class="download">
+        <div class="top">
+          <div class="left">
+            <img class="top_img" src="./img/icon01.png" alt="">
+            <img class="bot_img" src="./img/pink.png" alt="">
+          </div>
+          <div class="right">
+            <img src="./img/ios.png" alt="">
+            <a href="https://play.google.com/store/apps/details?id=air.com.ponygames.PonySpaSalon"><img
+                src="./img/and.png" alt=""></a>
+            <img src="./img/h5.png" alt="">
+          </div>
+        </div>
+        <div class="bottom">
+          <p>
+            Pony Makeup<br>
+            Spa Salon
+          </p>
+        </div>
+      </div>
+      <div class="download">
+        <div class="top">
+          <div class="left">
+            <img class="top_img" src="./img/icon5.png" alt="">
+            <img class="bot_img" src="./img/pink.png" alt="">
+          </div>
+          <div class="right">
+            <img src="./img/ios.png" alt="">
+            <img src="./img/and.png" alt="">
+            <img src="./img/h5.png" alt="">
+          </div>
+        </div>
+        <div class="bottom">
+          <p>
+            Pony Makeup<br>
+            Spa Salon
+          </p>
+        </div>
+      </div>
+      <div class="download" style="opacity: 0">
+        <div class="top">
+          <div class="left">
+            <img class="top_img" src="./img/icon01.png" alt="">
+            <img class="bot_img" src="./img/pink.png" alt="">
+          </div>
+          <div class="right">
+            <a href="https://apps.apple.com/app/id1465680087"><img src="./img/ios.png" alt=""></a>
+            <a href="https://play.google.com/store/apps/details?id=air.com.piggames.PonyHairSalonGame"><img
+                src="./img/and.png" alt=""></a>
+            <img src="./img/h5.png" alt="">
+          </div>
+        </div>
+        <div class="bottom">
+          <p>
+            Pony Makeup<br>
+            Spa Salon
+          </p>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+  <div class="footer">
+    <img src="./img/bg2.png" alt="">
+    <p>pony@cicigirl.com</p>
+  </div>
+
+  </div>
+
+
+</body>
+<script>
+  var menu = document.querySelector('.nav');
+
+  window.onresize = function () {
+    uatset();
+  }
+  function uatset() {
+    if (/(iPhone|iPad|iPod|iOS)/i.test(navigator.userAgent)) {
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = './css/style2.css';
+      document.getElementsByTagName("head")[0].appendChild(link)
+      var der = document.body.clientWidth / 900;
+      document.documentElement.style.fontSize = der * 10 + 'px';
+      menu.innerHTML = `<ul>
+          <li class="active"> <a href="./index.html">Home</a> </li>
+          <li><a href="./index.html">Games</a></li>
+          <li><a href="./index.html">Support</a></li>
+          <li><a href="./privacy_phone.html" class="yinsi">Privacy Policy</a></li>
+        </ul>`
+    } else if (/(Android)/i.test(navigator.userAgent)) {
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = './css/style3.css';
+      document.getElementsByTagName("head")[0].appendChild(link)
+      var der = document.body.clientWidth / 1265;
+      document.documentElement.style.fontSize = der * 10 + 'px';
+      menu.innerHTML = `<ul>
+          <li class="active"> <a href="./index.html">Home</a> </li>
+          <li><a href="./index.html">Games</a></li>
+          <li><a href="./index.html">Support</a></li>
+          <li><a href="./privacy_phone.html" class="yinsi">Privacy Policy</a></li>
+        </ul>`
+    } else {
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = './css/style.css';
+      document.getElementsByTagName("head")[0].appendChild(link)
+      var der = document.body.clientWidth / 1265;
+      document.documentElement.style.fontSize = der * 10 + 'px';
+      menu.innerHTML = `<ul>
+          <li class="active"> <a href="./index.html">Home</a> </li>
+          <li><a href="./index.html">Games</a></li>
+          <li><a href="./index.html">Support</a></li>
+          <li><a href="./privacy_web.html" class="yinsi">Privacy Policy</a></li>
+        </ul>`
+    };
+  }
+  uatset();
+
+    var oA = menu.querySelectorAll('li');
+    oA[0].className = 'active';
+    for (let i = 0; i < oA.length; i++) {
+      oA[i].onmouseenter = function () {
+        oA.forEach(item => { item.className = '' })
+        oA[i].className = 'active'
+      }
+    }
+    menu.onmouseleave = function () {
+      oA.forEach(item => { item.className = '' })
+      oA[0].className = 'active'
+    }
+</script>
+
+</html>

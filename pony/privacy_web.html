@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pony Family Games</title>
+  <link rel="Shortcut Icon" href="fav.ico" type="image/x-icon" />
+</head>
+<link rel="stylesheet" href="./css/privacy.css">
+
+<body>
+  <div class="main">
+
+    <img class='bg' src="./img/bg3.png" alt="">
+
+    <div class="menu">
+      <a href="./index.html">Home</a>
+      <a href="./index.html">Games</a>
+      <a href="./index.html">Support</a>
+      <a href="./privacy_web.html" class="active">Privacy Policy</a>
+    </div>
+    <div class="download">
+      <img src="./img/word.png" alt="">
+
+      <p></p>
+    </div>
+
+
+  </div>
+
+  <!-- 1265
+2310 -->
+
+
+
+  <script>
+    var main = document.querySelector('.main');
+    var img = new Image()
+    img.src = './img/bg.png'
+    var der = 1920 / 5040;
+    var currentwidth = document.body.clientWidth;
+    main.style.height = currentwidth / der + 'px'
+    window.onresize = function () {
+      currentwidth = document.body.clientWidth;
+      main.style.height = currentwidth / der + 'px'
+    }
+     var menu=document.querySelector('.menu');
+     var oA=menu.querySelectorAll('a');
+     for(let i=0;i<oA.length;i++){ oA[i].onmouseenter=function(){ oA.forEach(item=>{ item.className='' })
+       oA[i].className='active'
+       }
+       }
+       menu.onmouseleave=function(){
+       oA.forEach(item=>{ item.className='' })
+       oA[oA.length-1].className='active'
+       }
+  </script>
+</body>
+
+</html>

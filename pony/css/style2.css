@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+}
+
+html {
+  /* background: #333; */
+  font-size: 10px;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.top {
+  width: 100%;
+  margin-bottom: -3%;
+  position: relative;
+}
+
+.top .nav {
+  border-radius: 1rem;
+  position: absolute;
+  right: 15%;
+  top: 15%;
+  height:4.5rem;
+  width: 50rem;
+  background: #fff;
+  padding: 0 1rem;
+}
+
+.top .nav ul {
+  height: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top .nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.top .nav ul li {
+  border-radius: 1rem;
+  text-align: center;
+  line-height: 3.5rem;
+  width: 25%;
+  height: 3.5rem;
+  /* background: #ff64b8; */
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.active {
+  background: #ff64b8;
+  color: #fff;
+}
+
+.top .nav ul li:hover {
+  background: #ff64b8;
+  color: #fff;
+
+}
+
+.top .nav ul li:hover a {
+  color: white;
+}
+
+
+.footer {
+  width: 100%;
+  margin-bottom: -3%;
+}
+
+.center {
+  padding: 3% 14rem;
+  box-sizing: border-box;
+  width: 100%;
+  /* height: 1000px; */
+  background: #b8f5ff;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+
+}
+
+.center .download {
+  width: 40%;
+  height: 31rem;
+  display: flex;
+  flex-direction: column;
+  margin-right: 1.1rem;
+}
+
+.center .download .top {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.center .download .top .left {
+  width: 60%;
+  position: relative;
+
+  height: 25rem;
+  width: 17.3rem
+}
+
+.center .download .top .left .top_img {
+  z-index: 10;
+  width: 12.2rem;
+  height: 12.2rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0)
+}
+
+.center .download .top .left .bot_img {
+  width: 17.3rem;
+  position: absolute;
+  bottom: 0;
+}
+
+.center .download .top .right {
+  padding-top: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.center .download .top .right img {
+  width: 5.3rem;
+  height: 5.3rem;
+}
+
+.center .download .bottom {
+  padding-right: 6.5rem;
+}
+
+.center .download .bottom p {
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+
+}
+
+
+.top img {
+  width: 100%;
+  /* height: 100%;
+  background: url('./img/bg1.png') no-repeat;
+  background-size: 100% 100%; */
+}
+
+.footer {
+  position: relative;
+}
+
+.footer p {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 1.5rem;
+}
+
+.footer img {
+  width: 100%;
+
+}

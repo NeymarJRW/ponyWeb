@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pony Family Games</title>
+  <link rel="Shortcut Icon" href="fav.ico" type="image/x-icon" />
+</head>
+<link rel="stylesheet" href="./css/privacy.css">
+
+<body>
+  <div class="main">
+
+    <img class='bg' src="./img/bg3.png" alt="">
+
+    <!-- <div class="menu">
+      <a href="./index.html">Home</a>
+      <a href="./index.html">Games</a>
+      <a href="./index.html">Support</a>
+      <a href="./privacy_web.html" class="active">Privacy Policy</a>
+    </div> -->
+    <div class="top">
+      <!-- <img src="./img/bg.png" alt=""> -->
+      <div class="nav">
+        <!-- <ul>
+          <li> <a href="./index.html">Home</a> </li>
+          <li><a href="#">Games</a></li>
+          <li><a href="#">Support</a></li>
+          <li  class="active"><a href="./privacy_web.html" class="yinsi">Privacy Policy</a></li>
+        </ul> -->
+
+      </div>
+    </div>
+    <div class="download">
+      <img src="./img/word.png" alt="">
+
+      <p></p>
+    </div>
+
+
+  </div>
+
+  <!-- 1265
+2310 -->
+
+
+
+  <script>
+
+    var isPC = function () {
+      var userAgentInfo = navigator.userAgent;
+      var Agents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPod", "iPad"];
+      var flag = true;
+      for (var i = 0; i < Agents.length; i++) {
+        if (userAgentInfo.indexOf(Agents[i]) > 0) {
+          flag = false;
+          break;
+        }
+      }
+      return flag;
+    };
+    if (!isPC()) {
+      window.location.href = window.location.origin + '/privacyphone.html';
+    }
+    var menu = document.querySelector('.nav');
+    menu.innerHTML = `<ul>
+          <li> <a href="./index.html">Home</a> </li>
+          <li><a href=${window.location.origin + '/index.html#game'} >Games</a></li>
+          <li><a href=${window.location.origin + '/index.html#support'} >Support</a></li>
+          <li class="active"><a href="./privacy.html" class="yinsi">Privacy Policy</a></li>
+        </ul>`;
+    var menu = document.querySelector('.nav');
+    var der = document.body.clientWidth / 1265;
+    document.documentElement.style.fontSize = der * 10 + 'px';
+    window.onresize = function () {
+      var der = document.body.clientWidth / 1265;
+      document.documentElement.style.fontSize = der * 10 + 'px';
+      if (!isPC()) {
+        window.location.href = window.location.origin + '/privacyphone.html';
+      }
+    }
+    var oA = menu.querySelectorAll('li');
+    // oA[3].className = 'active';
+    for (let i = 0; i < oA.length; i++) {
+      oA[i].onmouseenter = function () {
+        oA.forEach(item => { item.className = '' })
+        oA[i].className = 'active'
+      }
+    }
+    menu.onmouseleave = function () {
+      oA.forEach(item => { item.className = '' })
+      oA[3].className = 'active'
+    }
+  </script>
+</body>
+
+</html>
